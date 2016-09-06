@@ -1,0 +1,6 @@
+core:
+    build: .
+    dockerfile: ./Dockerfile
+    ports: 
+        - "3000:3000"
+    command: npm start

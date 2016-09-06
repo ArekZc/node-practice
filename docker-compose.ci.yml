@@ -1,0 +1,2 @@
+core:
+    command: npm test

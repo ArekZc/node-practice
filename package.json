@@ -7,7 +7,7 @@
     "start": "tsc && node ./bin/www",
     "lint": "tslint -e \"./{node_modules,typings}/**/*.ts\" \"./**/*.ts\"",
     "sloc": "sloc --details --format cli-table --exclude \"(node_modules|typings)|(.*)*.js\" .",
-    "unit": "tsc && mocha tests/unit",
+    "unit": "tsc && istanbul cover ./node_modules/.bin/mocha tests/unit",
     "test": "npm run lint && npm run sloc && npm run unit"
   },
   "dependencies": {
@@ -20,7 +20,9 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^3.0.2",
+    "mocha-istanbul": "^0.3.0",
     "sloc": "^0.1.11",
     "tslint": "^3.15.1",
     "typescript": "^1.8.10",
