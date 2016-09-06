@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "typings install",
     "start": "tsc && node ./bin/www",
     "lint": "tslint -e \"./{node_modules,typings}/**/*.ts\" \"./**/*.ts\"",
     "unit": "tsc && mocha tests/unit",
