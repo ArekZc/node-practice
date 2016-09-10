@@ -22,6 +22,7 @@
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
     "ts-express-decorators": "^0.3.1",
+    "ts-httpexceptions": "^1.3.1",
     "ts-log-debug": "^1.2.1"
   },
   "devDependencies": {
