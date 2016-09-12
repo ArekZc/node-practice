@@ -5,3 +5,6 @@ core:
         - "3000:3000"
     command: npm start
     privileged: true
+provision:
+    build: provisioning
+    dockerfile: ./Dockerfile
